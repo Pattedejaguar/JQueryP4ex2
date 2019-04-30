@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Exercice 2 Bulletin</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="assets/css/style.css">
+    </head>
+    <body>
+        <div class="jumbotron">
+            <h1 class="display-3 text-center">Calcul de votre moyenne</h1>
+            <p class="lead text-center">Veuillez entrer vos 5 dernières notes.</p>
+        </div>
+        <div class="container d-flex justify-content-center">
+            <form class="formnote d-flex justify-content-center flex-column" action="index.html" method="post">
+                <label for="note">Première note sur 20 : </label>
+                <input class="note1" type="text" name="random" placeholder="0"/>
+                <label for="note">Deuxième note sur 20 : </label>
+                <input class="note2" type="text" name="random" placeholder="0"/>
+                <label for="note">Troisième note sur 20 : </label>
+                <input class="note3" type="text" name="random" placeholder="0"/>
+                <label for="note">Quatrième note sur 20 : </label>
+                <input class="note4" type="text" name="random" placeholder="0"/>
+                <label for="note">Cinquième note sur 20 : </label>
+                <input class="note5" type="text" name="random" placeholder="0"/>
+            </form>
+        </div>
+        <div class="text-center">
+            <button id="calcul">Valider</button>
+        </div>
+        <div class="container text-center">
+            <p id="moyenne"></p>
+        </div>
+        <div class="container text-center">
+            <p id="appreciation"></p>
+        </div>
+        <script src="assets\js\jquery-3.3.1.min.js"></script>
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>
